@@ -1,0 +1,423 @@
+@font-face {
+    font-family: 'dosislight';
+    src: url('fonts/dosis-light-webfont.eot');
+    src: url('fonts/dosis-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dosis-light-webfont.woff2') format('woff2'),
+         url('fonts/dosis-light-webfont.woff') format('woff'),
+         url('fonts/dosis-light-webfont.ttf') format('truetype'),
+         url('fonts/dosis-light-webfont.svg#dosislight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sunnregular';
+    src: url('fonts/sunn-webfont.eot');
+    src: url('fonts/sunn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sunn-webfont.woff2') format('woff2'),
+         url('fonts/sunn-webfont.woff') format('woff'),
+         url('fonts/sunn-webfont.ttf') format('truetype'),
+         url('fonts/sunn-webfont.svg#sunnregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+	font-size: 13px;
+	font-family: ;
+	background: #fff;
+	color: #000;
+}
+
+a { 
+	-webkit-transition: all .3s ease;
+   -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+     -o-transition: all .3s ease;
+        transition: all .3s ease;
+}
+
+.wrapper {
+     overflow: hidden;
+ }
+.container { 
+    width: 1170px; 
+    margin: 0 auto; 
+}
+
+.form-col:after,
+.form-row:after,
+.holiday-section .section-content:after,
+.holiday-section .section-content div:after { 
+    display: table; 
+    content: ''; 
+    line-height: 0; 
+    height: 0; 
+    clear: both; 
+}
+
+.header { 
+    background: url(images/header-bg.png) fixed; 
+    background-size: 100% 100%; 
+    position: relative; 
+}
+
+.header .container-content { 
+    padding: 250px 0 48px; 
+}
+
+.nav { 
+    text-align: center; 
+    top: 63px; 
+    position: fixed; 
+    z-index: 999; 
+    left: 0; 
+    right: 0; 
+}
+
+.nav ul li { 
+    display: inline-block; 
+    list-style: none; 
+}
+
+.nav ul li + li { 
+    display: inline-block; 
+    list-style: none; 
+    margin-left: 56px; 
+}
+
+.nav ul li a { 
+    text-decoration: none; 
+    color: #fff; 
+    font-family: "dosislight"; 
+    font-size: 20px; 
+    letter-spacing: 0.03em; 
+}
+
+.nav ul li a:hover { 
+    text-decoration: underline; 
+}
+
+.logo { 
+    width: 418px; 
+    height: 245px; 
+    margin: 0 auto 64px; 
+    font-size: 0; color: transparent; 
+    background: url(images/logo.png) no-repeat 0 0; 
+}
+
+/* slider */
+.head-slider { 
+    text-align: center; 
+}
+
+.btn { 
+    display: block; 
+    width: 170px; 
+    background: #b91706; 
+    text-align: center; 
+    margin: 0 auto; 
+    padding: 11px 0; 
+    color: #fff; 
+    text-decoration: none; 
+    font-family: 'dosislight'; 
+    text-transform: uppercase; 
+    font-size: 22px; 
+    border-radius: 2px; 
+    cursor: pointer; 
+}
+
+.btn:hover { 
+    background: #fff; 
+    color: #b91706; 
+}
+
+.bx-controls { 
+    margin-top: 56px; 
+}
+
+.bx-pager-item { 
+    display: inline-block; 
+}
+
+.bx-pager-item + .bx-pager-item { 
+    margin-left: 38px; 
+}
+
+.bx-pager-item a { 
+    font-size: 0; 
+    display: block; 
+    width: 11px; 
+    height: 11px; 
+    background: #fff; 
+    border-radius: 50%; 
+    border: 1px solid #fff; 
+}
+
+.bx-pager-item a.active { 
+    background: transparent; 
+}
+
+.bx-controls-direction a { 
+    font-size: 0; 
+    display: block; 
+    width: 81px; 
+    height: 167px; 
+    position: absolute; 
+    top: 50%; 
+}
+
+.bx-controls-direction .bx-prev { 
+    background: url(images/slide-back.png); 
+    left: 0; 
+}
+
+.bx-controls-direction .bx-next { 
+    background: url(images/slide-next.png); 
+    right: 0; 
+}
+
+.slider-content h3 {
+    color: #fff; 
+    font-size: 80px; 
+    margin-bottom: 71px; 
+    font-family: "sunnregular"; 
+    letter-spacing: 0.07em; 
+}
+
+/* main content */
+
+.red {
+    color: #b91706; 
+}
+
+.green {
+    color: #2bb606; 
+}
+
+.welcome-section {
+    background: url(images/welcome-bg.jpg) fixed; 
+    background-size: cover; 
+}
+
+.welcome-section .container-content {
+    text-align: center; 
+    padding: 122px 0;  
+}
+
+.welcome-section h3, .welcome-section h4 {
+    font-family: "sunnregular"; 
+    font-size: 60px; 
+    margin-bottom: 20px; 
+}
+
+.welcome-section p {
+    font-family: "dosislight"; 
+    font-size: 20px; 
+    margin-bottom: 25px; 
+}
+
+.welcome-section p span {
+    font-size: 40px; 
+    font-family: "sunnregular"; 
+    font-weight: bold; 
+}
+
+.my-blog { 
+    position: relative; 
+    background: url(images/blog-bg.jpg) fixed; 
+    padding-bottom: 72px; 
+}
+
+.my-blog .blog-box { 
+    width: 370px; 
+    display: block; 
+    float: left; 
+}
+
+.my-blog .blog-box + .blog-box { 
+    margin-left: 20px; 
+}
+
+.my-blog h3 {
+    font-size: 60px; 
+    font-family: "sunnregular"; 
+    color: #fff; 
+    text-align: center; 
+    letter-spacing: 0.1em; 
+    padding-top: 113px; 
+    margin-bottom: 51px; 
+}
+
+.box-image img { 
+    width: 100%; 
+    height: 100%; 
+}
+
+.blog-box h4 {
+    font-family: "sunnregular"; 
+    color: #fff; 
+    font-size: 40px; 
+    letter-spacing: 0.02em; 
+}
+
+.blog-box p {
+    font-family: "dosislight"; 
+    color: #fff; 
+    font-size: 16px; 
+}
+
+.box-btn .btn {
+    font-size: 16px; 
+   /* margin: 10px 0 ; */
+
+    margin: 20px 0 20px;
+}
+
+.holiday-section {
+    background: url(images/holiday-bg.jpg) fixed; 
+    background-size: cover; 
+}
+
+.section-text { 
+    width: 57%; 
+}
+
+.image { 
+    width: 43%; 
+}
+
+.holiday-section .container-content { 
+    padding-top: 60px; 
+}
+
+.holiday-section .section-content div { 
+    float: left; 
+}
+
+/* form section */
+.contact { 
+    height: 825px; 
+    position: relative; 
+    padding-top: 140px; 
+}
+
+.contact h3 + p { 
+    margin-bottom: 90px; 
+    font-size: 18px; 
+}
+
+.contact h3 + p,
+.contact h3 { 
+    color: #fff; 
+    text-align: center; 
+}
+
+.contact h3 { 
+    font-size: 26px; 
+    margin-bottom: 10px; 
+}
+
+#bgvid { 
+    position: absolute; 
+    z-index: -100; 
+    top: -140px; 
+    right: 0; 
+    bottom: 0; 
+}
+
+.form-row {
+    margin-bottom: 26px;
+}
+
+.form-col { 
+    width: 50%; 
+    float: left; 
+    color: #fff; 
+}
+
+.form-col p { 
+    font-size: 16px; 
+}
+
+.form-field { 
+    width: 100%; 
+    border-radius: 3px; 
+    border: none; 
+    height: 53px; 
+    padding-left: 20px; 
+}
+
+.form-col .btn {
+    font-size: 16px; 
+    margin: 10px 0; 
+}
+
+
+textarea.form-field { 
+    resize: none; 
+    height: 211px; 
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 1170px){
+	.container { 
+        width: 960px; 
+    }
+
+	.container-content,
+	.welcome-section .container-content { 
+        padding-left: 10px; 
+        padding-right: 10px; 
+    }
+
+	.my-blog .blog-box { 
+        width: 32%; 
+    }
+
+	.my-blog .blog-box + .blog-box { 
+        margin-left: 10px; 
+    }
+
+}
+
+@media screen and (max-width: 960px){
+	.container { 
+        width: 100%; 
+    }
+
+    .nav ul li + li { 
+    display: inline-block; 
+    list-style: none; 
+    margin-left: 26px; 
+}
+
+	.my-blog .blog-box { 
+        width: 80%; 
+        float: none; 
+        display: block; 
+        margin: 0 auto 20px; 
+    }
+
+	.box-image { 
+        height: 290px; 
+    }
+
+	.my-blog .blog-box + .blog-box { 
+        margin-left: auto; 
+    }
+
+	.holiday-section .section-content div { 
+        float: none; 
+        width: 100%; 
+        padding-bottom: 60px; 
+    }
+
+	.image { 
+        display: none; 
+    }
+
+}
