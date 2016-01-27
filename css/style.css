@@ -25,12 +25,12 @@
 
 @font-face {
     font-family: 'dosismedium';
-    src: url('dosis-medium-webfont.eot');
-    src: url('dosis-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('dosis-medium-webfont.woff2') format('woff2'),
-         url('dosis-medium-webfont.woff') format('woff'),
-         url('dosis-medium-webfont.ttf') format('truetype'),
-         url('dosis-medium-webfont.svg#dosismedium') format('svg');
+    src: url('fonts/dosis-medium-webfont.eot');
+    src: url('fonts/dosis-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dosis-medium-webfont.woff2') format('woff2'),
+         url('fonts/dosis-medium-webfont.woff') format('woff'),
+         url('fonts/dosis-medium-webfont.ttf') format('truetype'),
+         url('fonts/dosis-medium-webfont.svg#dosismedium') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -38,12 +38,12 @@
 
 @font-face {
     font-family: 'dosisregular';
-    src: url('dosis-regular-webfont.eot');
-    src: url('dosis-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('dosis-regular-webfont.woff2') format('woff2'),
-         url('dosis-regular-webfont.woff') format('woff'),
-         url('dosis-regular-webfont.ttf') format('truetype'),
-         url('dosis-regular-webfont.svg#dosisregular') format('svg');
+    src: url('fonts/dosis-regular-webfont.eot');
+    src: url('fonts/dosis-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dosis-regular-webfont.woff2') format('woff2'),
+         url('fonts/dosis-regular-webfont.woff') format('woff'),
+         url('fonts/dosis-regular-webfont.ttf') format('truetype'),
+         url('fonts/dosis-regular-webfont.svg#dosisregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -51,12 +51,12 @@
 
 @font-face {
     font-family: 'homizio_novalight';
-    src: url('light-webfont.eot');
-    src: url('light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('light-webfont.woff2') format('woff2'),
-         url('light-webfont.woff') format('woff'),
-         url('light-webfont.ttf') format('truetype'),
-         url('light-webfont.svg#homizio_novalight') format('svg');
+    src: url('fonts/light-webfont.eot');
+    src: url('fonts/light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/light-webfont.woff2') format('woff2'),
+         url('fonts/light-webfont.woff') format('woff'),
+         url('fonts/light-webfont.ttf') format('truetype'),
+         url('fonts/light-webfont.svg#homizio_novalight') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -122,6 +122,7 @@ a {
 .nav ul li { 
     display: inline-block; 
     list-style: none; 
+    background: rgba(0,0,0,.2);
 }
 
 .nav ul li + li { 
@@ -256,13 +257,13 @@ a {
 }
 
 .welcome-section p {
-    font-family: "homizio_novalight_italic"; 
-    font-size: 20px; 
+    font-family: "homizio_novalight"; 
+    font-size: 25px; 
     margin-bottom: 25px; 
 }
 
 .welcome-section p span {
-    font-size: 40px; 
+    font-size: 50px; 
     font-family: "sunnregular"; 
     font-weight: bold; 
 }
@@ -321,13 +322,14 @@ a {
 .holiday-section {
     background: url(images/holiday-bg.jpg) fixed; 
     background-size: cover; 
+    padding-bottom: 105px;
 }
 
 .holiday-section .container-content h3 {
 	font-family: "sunnregular"; 
     color: #000; 
     font-size: 65px;
-    margin-bottom: 77px;
+    margin-bottom: 45px;
     letter-spacing: 0.05em;
     word-spacing: 0.1em;
 }
@@ -347,6 +349,7 @@ a {
 
 .section-text { 
     width: 57%; 
+    margin-top: 40px;
 }
 
 .image { 
