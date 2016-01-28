@@ -116,13 +116,15 @@ a {
     position: fixed; 
     z-index: 999; 
     left: 0; 
-    right: 0; 
+    right: 0;
+    /*background-color: #666;*/
+
 }
 
 .nav ul li { 
     display: inline-block; 
-    list-style: none; 
-    background: rgba(0,0,0,.2);
+    list-style: none;
+
 }
 
 .nav ul li + li { 
@@ -132,11 +134,13 @@ a {
 }
 
 .nav ul li a { 
+	-webkit-text-stroke:0.5px black;
     text-decoration: none; 
-    color: #fff; 
+    color: white; 
     font-family: "dosislight"; 
     font-size: 20px; 
     letter-spacing: 0.03em; 
+
 }
 
 .nav ul li a:hover { 
@@ -250,16 +254,32 @@ a {
     padding: 122px 0;  
 }
 
-.welcome-section h3, .welcome-section h4 {
+.welcome-section h3 {
     font-family: "sunnregular"; 
     font-size: 60px; 
-    margin-bottom: 20px; 
+    margin-bottom: 65px; 
+    letter-spacing: 0.02em;
+    word-spacing: 0.2em;
 }
 
+.welcome-section h4 {
+    font-family: "sunnregular"; 
+    font-size: 60px; 
+    margin-bottom: 15px; 
+    letter-spacing: 0.02em;
+    word-spacing: 0.2em;
+}
+
+.welcome-section p + p {
+	margin-top: 80px;
+}
 .welcome-section p {
     font-family: "homizio_novalight"; 
     font-size: 25px; 
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
+    letter-spacing: 0.02em;
+    line-height: 1.5em; 
+
 }
 
 .welcome-section p span {
@@ -314,8 +334,6 @@ a {
 
 .box-btn .btn {
     font-size: 16px; 
-   /* margin: 10px 0 ; */
-
     margin: 20px 0 20px;
 }
 
@@ -368,15 +386,15 @@ a {
 .contact { 
     height: 825px; 
     position: relative; 
-    padding-top: 140px; 
+    padding-top: 80px; 
 }
 
-.contact h3 + p { 
+.contact h3 + h4 { 
     margin-bottom: 90px; 
     font-size: 18px; 
 }
 
-.contact h3 + p,
+.contact h3 + h4,
 .contact h3 { 
     color: #fff; 
     text-align: center; 
@@ -389,9 +407,14 @@ a {
     letter-spacing: 0.04em;
 }
 
-.contact .container-content p {
+.contact h4 {
 	font-size: 20px;
 	font-family: "dosisregular";
+}
+
+.contact .container-content p {
+	font-size: 25px;
+	font-family: "dosislight";
 }
 
 #bgvid { 
@@ -416,17 +439,17 @@ a {
     font-size: 16px; 
 }
 
+.form-col .btn {
+    font-size: 16px; 
+    margin: 10px 0; 
+}
+
 .form-field { 
     width: 100%; 
     border-radius: 3px; 
     border: none; 
     height: 53px; 
     padding-left: 20px; 
-}
-
-.form-col .btn {
-    font-size: 16px; 
-    margin: 10px 0; 
 }
 
 
