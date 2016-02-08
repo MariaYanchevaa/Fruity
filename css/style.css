@@ -102,7 +102,8 @@ a {
 
 .header { 
     background: url(images/header-bg.png) fixed; 
-    background-size: 100% 100%; 
+    background-size: auto; 
+    background-position: center;
     position: relative; 
 }
 
@@ -117,9 +118,9 @@ a {
     z-index: 999; 
     left: 0; 
     right: 0;
-    /*background-color: #666;*/
-
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }
+
 
 .nav ul li { 
     display: inline-block; 
@@ -134,7 +135,7 @@ a {
 }
 
 .nav ul li a { 
-	text-shadow: 2px 1px #000;
+	/*text-shadow: 2px 1px #000;*/
     text-decoration: none; 
     color: white; 
     font-family: "dosislight"; 
@@ -144,9 +145,9 @@ a {
 }
 
 .nav ul li a:hover { 
-    text-decoration: underline;
-    color: #fff; 
+    text-decoration: underline; 
 }
+
 
 .logo { 
     width: 418px; 
@@ -338,6 +339,8 @@ a {
     margin: 20px 0 20px;
 }
 
+/* holiday section */
+
 .holiday-section {
     background: url(images/holiday-bg.jpg) fixed; 
     background-size: cover; 
@@ -387,7 +390,7 @@ a {
 .contact { 
     height: 825px; 
     position: relative; 
-    padding-top: 80px; 
+    padding-top: 80px;  
 }
 
 .contact h3 + h4 { 
@@ -406,6 +409,7 @@ a {
     font-family: "sunnregular";
     margin-bottom: 10px; 
     letter-spacing: 0.04em;
+
 }
 
 .contact h4 {
@@ -418,13 +422,25 @@ a {
 	font-family: "dosislight";
 }
 
+
 #bgvid { 
-    position: absolute; 
-    z-index: -100; 
+    position: absolute;  
     top: -140px; 
     right: 0; 
     bottom: 0; 
+    z-index: -100;
 }
+
+#color-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+}
+
 
 .form-row {
     margin-bottom: 26px;
@@ -465,6 +481,18 @@ textarea.form-field {
         width: 960px; 
     }
 
+    .bx-controls-direction .bx-prev { 
+   		 background: url(images/slide-back.png) no-repeat; 
+   		 background-size: 50px;
+    	 background-position: left; 
+	}
+
+	.bx-controls-direction .bx-next { 
+   		 background: url(images/slide-next.png) no-repeat; 
+   		 background-size: 50px;
+   		 background-position: right; 
+	}
+
 	.container-content,
 	.welcome-section .container-content { 
         padding-left: 10px; 
@@ -479,6 +507,29 @@ textarea.form-field {
         margin-left: 10px; 
     }
 
+   .contact-form {
+    	 width: 70%;
+     	 margin-right: 30%;
+     	 margin-left: 30%;
+    
+   }
+	.contact .container-content p {
+		font-size: 18px;
+		font-family: "dosislight";
+	}
+	 .form-row {
+   		 margin-bottom: 10px;
+	}
+
+	.form-col { 
+   		 width: 50%; 
+   		 float: none; 
+   		 color: #fff; 
+	}
+
+	.form-col p { 
+   		 font-size: 5px; 
+	}
 }
 
 @media screen and (max-width: 960px){
@@ -486,11 +537,18 @@ textarea.form-field {
         width: 100%; 
     }
 
-    .nav ul li + li { 
-    display: inline-block; 
-    list-style: none; 
-    margin-left: 26px; 
-}
+    
+	.bx-controls-direction .bx-prev { 
+   		 background: url(images/slide-back.png) no-repeat; 
+   		 background-size: 40px;
+    	 background-position: left; 
+	}
+
+	.bx-controls-direction .bx-next { 
+   		 background: url(images/slide-next.png) no-repeat; 
+   		 background-size: 40px;
+   		 background-position: right; 
+	}
 
 	.my-blog .blog-box { 
         width: 80%; 
@@ -516,5 +574,30 @@ textarea.form-field {
 	.image { 
         display: none; 
     }
+
+    .contact-form {
+    	 width: 70%;
+     	 margin-right: 30%;
+     	 margin-left: 30%;
+    
+   }
+	.contact .container-content p {
+		font-size: 15px;
+		font-family: "dosislight";
+	}
+	 .form-row {
+   		 margin-bottom: 10px;
+	}
+
+	.form-col { 
+   		 width: 50%; 
+   		 float: none; 
+   		 color: #fff; 
+	}
+
+	.form-col p { 
+   		 font-size: 5px; 
+	}
+    
 
 }
