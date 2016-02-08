@@ -439,6 +439,7 @@ a {
     height: 100%;
     background-color: black;
     opacity: 0.3;
+    z-index: -1;
 }
 
 
