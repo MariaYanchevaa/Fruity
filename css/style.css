@@ -92,7 +92,8 @@ a {
 .form-col:after,
 .form-row:after,
 .holiday-section .section-content:after,
-.holiday-section .section-content div:after { 
+.holiday-section .section-content div:after,
+.contacts .container-content:after { 
     display: table; 
     content: ''; 
     line-height: 0; 
@@ -102,7 +103,7 @@ a {
 
 .header { 
     background: url(images/header-bg.png) fixed; 
-    background-size: auto; 
+    background-size: cover; 
     background-position: center;
     position: relative; 
 }
@@ -118,7 +119,7 @@ a {
     z-index: 999; 
     left: 0; 
     right: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -141,6 +142,7 @@ a {
     font-family: "dosislight"; 
     font-size: 20px; 
     letter-spacing: 0.03em; 
+    
 
 }
 
@@ -388,6 +390,7 @@ a {
 
 /* form section */
 .contact { 
+	overflow: hidden;
     height: 825px; 
     position: relative; 
     padding-top: 80px;  
@@ -396,6 +399,7 @@ a {
 .contact h3 + h4 { 
     margin-bottom: 90px; 
     font-size: 18px; 
+
 }
 
 .contact h3 + h4,
@@ -417,12 +421,6 @@ a {
 	font-family: "dosisregular";
 }
 
-.contact .container-content p {
-	font-size: 25px;
-	font-family: "dosislight";
-}
-
-
 #bgvid { 
     position: absolute;  
     top: -140px; 
@@ -443,32 +441,45 @@ a {
 }
 
 
-.form-row {
-    margin-bottom: 26px;
+
+.contact-info p{
+	width: 30%;
+	font-size: 20px;
+	font-family: "dosislight";
+	color: #fff;
+	margin-left: 5%;
+
 }
 
-.form-col { 
-    width: 50%; 
-    float: left; 
-    color: #fff; 
+.contact-info + .contact-info {
+	padding-top: 30px;
 }
 
-.form-col p { 
-    font-size: 16px; 
+.form-field { 
+	width: 570px;
+    height: 53px;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 3px; 
+    border: none;  
+    padding-left: 20px; 
+
 }
 
-.form-col .btn {
+.contact-form {
+    position: absolute;
+    margin-top: -14%;
+    margin-left: 40%;
+    
+}
+
+
+.contact-form .btn {
     font-size: 16px; 
     margin: 10px 0; 
 }
 
-.form-field { 
-    width: 100%; 
-    border-radius: 3px; 
-    border: none; 
-    height: 53px; 
-    padding-left: 20px; 
-}
+
 
 
 textarea.form-field { 
@@ -508,29 +519,39 @@ textarea.form-field {
         margin-left: 10px; 
     }
 
-   .contact-form {
-    	 width: 70%;
-     	 margin-right: 30%;
-     	 margin-left: 30%;
-    
-   }
-	.contact .container-content p {
-		font-size: 18px;
-		font-family: "dosislight";
-	}
-	 .form-row {
-   		 margin-bottom: 10px;
-	}
+.contact-info p{
+	position: relative;
+    width: 350px;
+    margin: 0 auto;
+    top: auto;
+    right: auto;
 
-	.form-col { 
-   		 width: 50%; 
-   		 float: none; 
-   		 color: #fff; 
-	}
+	font-size: 18px;
+	font-family: "dosislight";
+	color: #fff;
+}
 
-	.form-col p { 
-   		 font-size: 5px; 
-	}
+.contact-info + .contact-info {
+	padding-top: 3px;
+}
+
+.form-field { 
+	width: 82%;
+	margin-bottom: 15px;
+}
+
+.contact-form {
+	width: 60%;
+    top: 67%;
+    right: 13%;
+    bottom: 10px;
+}
+
+.contact-form .btn {
+    font-size: 16px; 
+    margin: 10px 0; 
+}
+	
 }
 
 @media screen and (max-width: 960px){
@@ -576,29 +597,37 @@ textarea.form-field {
         display: none; 
     }
 
-    .contact-form {
-    	 width: 70%;
-     	 margin-right: 30%;
-     	 margin-left: 30%;
-    
-   }
-	.contact .container-content p {
-		font-size: 15px;
-		font-family: "dosislight";
-	}
-	 .form-row {
-   		 margin-bottom: 10px;
-	}
+   .contact-info p{
+	position: relative;
+   	width: 300px;
+    margin: 0 auto;
+    top: -9px;
+    right: auto;
 
-	.form-col { 
-   		 width: 50%; 
-   		 float: none; 
-   		 color: #fff; 
-	}
+	font-size: 18px;
+	font-family: "dosislight";
+	color: #fff;
+}
 
-	.form-col p { 
-   		 font-size: 5px; 
-	}
+.contact-info + .contact-info {
+	padding-top: 2px;
+}
+
+.form-field { 
+	width: 82%;
+	margin-bottom: 15px;
+}
+
+.contact-form {
+	width: 60%;
+    top: 62%;
+    right: 13%;
+}
+
+.contact-form .btn {
+    font-size: 16px; 
+    margin: 10px 0; 
+}
     
 
 }
